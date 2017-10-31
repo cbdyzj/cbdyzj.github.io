@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bind2</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 5em;
+        }
+
+        input {
+            font-size: 2.5em;
+            text-align: center;
+        }
+
+        p {
+            font-size: 2.5em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>双向绑定哟</h1>
+    <form>
+        <label for="bind2"></label>
+        <input type="text" id="bind2" name="value" placeholder="输入吧；）">
+    </form>
+    <p></p>
+</body>
+<script>
+    const p = document.querySelector('p')
+    const input = document.querySelector('input')
+    input.addEventListener('input', ({ target }) => mo.value = target.value)
+    const mo = new Proxy({ value: '' }, {
+        set: (target, property, value) => {
+            target[property] = value
+            input.value = value
+            p.innerText = JSON.stringify(target)
+        }
+    })
+
+</script>
+
+</html>

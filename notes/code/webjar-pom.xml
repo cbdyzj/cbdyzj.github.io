@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.jianzhao</groupId>
+    <artifactId>frontend</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+
+    <build>
+        <resources>
+            <resource>
+                <excludes>
+                    <exclude>pom.xml</exclude>
+                </excludes>
+                <directory>${project.basedir}</directory>
+                <targetPath>${project.build.outputDirectory}/META-INF/resources/webjars</targetPath>
+            </resource>
+        </resources>
+    </build>
+
+</project>

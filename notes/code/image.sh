@@ -1,0 +1,1 @@
+curl http://www.topit.me/ | grep -P "http:[^>]*?(jpg|gif)" -o | xargs wget
