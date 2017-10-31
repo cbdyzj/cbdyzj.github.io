@@ -22,7 +22,7 @@ function loadCatalog(content) {
     main.innerHTML = marked(content);
     var nodes = main.children;
     var liNodes = nodes[0].children;
-    Array.prototype.map.call(liNodes, function (liNode) {
+    Array.prototype.forEach.call(liNodes, function (liNode) {
         var aEl = document.createElement("a");
         aEl.href = "#/" + liNode.textContent;
         aEl.textContent = liNode.textContent;
@@ -46,7 +46,7 @@ function async() {
 
 document.onreadystatechange = function () {
     if (document.readyState === "interactive") {
-        async();
         addEventListener('popstate', async);
+        async();
     }
 }
