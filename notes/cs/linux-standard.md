@@ -1,8 +1,6 @@
-| Standard | Description                         |
-| -------- | ----------------------------------- |
-| IOS C    |                                     |
-| POSIX    | Portable Operating System Interface |
-| SUS      | Single UNIX Specification           |
-| LSB      | Linux Standard Base                 |
-| FHS      | Filesystem Hierarchy Standard       |
+- IOS C
+- POSIX：Portable Operating System Interface
+- SUS：Single UNIX Specification
+- LSB：Linux Standard Base
+- FHS：Filesystem Hierarchy Standard
 

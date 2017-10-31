@@ -1,14 +1,14 @@
-## Require.js
+# Require.js
 
 > AMD（Asynchronous Module Definition）
 
-Usage
+### Usage
 
 ```html
 <script data-main="scripts/main" src="scripts/require.js"></script>
 ```
 
-Independent modules
+### Independent modules
 
 ```javascript
 define({
@@ -24,7 +24,7 @@ define(function() {
 });
 ```
 
-Dependent modules
+### Dependent modules
 
 ```javascript
 define(['module1', 'module2'], function(m1, m2) {

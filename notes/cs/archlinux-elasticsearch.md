@@ -1,6 +1,5 @@
-设置elasticsearch用户，不能为root
-
-系统文件描述符数量需要不小于65536
+- 设置elasticsearch用户，不能为root
+- 系统文件描述符数量需要不小于65536
 
 ```shell
 vim /etc/security/limits.conf
@@ -12,7 +11,7 @@ vim /etc/security/limits.conf
 * hard nproc 4096
 ```
 
-虚拟内存限制
+- 虚拟内存限制
 
 ```shell
 sudo vi /etc/sysctl.conf

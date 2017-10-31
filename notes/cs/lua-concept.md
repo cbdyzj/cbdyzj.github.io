@@ -1,15 +1,13 @@
-## Lua
+# Lua
 
-#### Type
+### Type
 
 nil, boolean, number, string, function, userdata, thread, table
 
-#### Table
+### Table
 
 meta table
 
-#### Coroutine
+### Coroutine
 
 create, resume, yield, status, wrap, running
-
-#### OO

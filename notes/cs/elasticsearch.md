@@ -1,4 +1,4 @@
-#### 概念
+## 概念
 
 - index：索引
 - type：类型
@@ -15,7 +15,7 @@ curl localhost:9200
 # 请求形式
 curl http://localhost:9200/index/type/id
 ```
-#### 搜索
+## 搜索
 
 ```
 ?q=

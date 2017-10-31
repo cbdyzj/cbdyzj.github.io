@@ -1,10 +1,10 @@
-| Module                | Description  |
-| --------------------- | ------------ |
-| python -m http.server | http  server |
-| pyhton -m json.tool   | json tool    |
-| python  -m smtpd      | smtp  server |
-| python -m turtle      | gui lib      |
-| python -m antigravity | xkcd         |
-| sh                    | shell        |
-| bottle                | mini wsgi    |
+# Python Module
+
+- http server：python -m http.server
+- json tool：pyhton -m json.tool
+- smtp server：| python  -m smtpd
+- gui lib：| python -m turtle
+- xkcd：| python -m antigravity
+- sh：shell
+- bottle：mini wsgi
 

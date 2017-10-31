@@ -1,4 +1,4 @@
-#### 安装基础系统
+## 安装基础系统
 
 ```shell
 # 检查启动模式
@@ -57,7 +57,7 @@ reboot
 systemctl enable dhcpcd
 ```
 
-#### 用户管理
+## 用户管理
 
 ```shell
 # 添加新用户
@@ -68,7 +68,7 @@ passwd cbdyzj
 visudo
 ```
 
-#### 安装X
+## 安装X
 
 ```shell
 # 检查显卡
@@ -97,7 +97,7 @@ pacman -S gnome-tweak-tool
 systemctl enable  gdm
 ```
 
-#### Pacman
+## Pacman
 
 ```shell
 # 滚动更新

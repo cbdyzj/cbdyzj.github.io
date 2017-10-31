@@ -1,43 +1,43 @@
-## 怎样使用selenium
+# 怎样使用selenium
 
-安装firefox
+- 安装firefox
 
 ```shell
 $ brew cask install firefox
 ```
 
-安装Java
+- 安装Java
 
 ```shell
 $ brew cask install java
 ```
 
-安装selenium-server-standalone（可选）
+- 安装selenium-server-standalone（可选）
 
 ```shell
 $ brew install selenium-server-standalone
 ```
 
-安装浏览器驱动
+- 安装浏览器驱动
 
 ```shell
 # 火狐浏览器驱动
 $ brew install geckodriver
 ```
 
-安装node的依赖
+- 安装node的依赖
 
 ```shell
 $ npm i -D selenium-webdriver
 ```
 
-启动火狐浏览器驱动
+- 启动火狐浏览器驱动
 
 ```shell
 $ geckodriver
 ```
 
-运行演示代码
+- 运行演示代码
 
 ```javascript
 var webdriver = require('selenium-webdriver'),

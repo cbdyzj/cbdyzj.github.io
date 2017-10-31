@@ -1,7 +1,5 @@
 ## OpenSSL CLI
 
-### 标准命令
-
 - asn1parse：用于解释用ANS.1语法书写的语句
 - ca：ca管理
 - crl：管理CRL列表

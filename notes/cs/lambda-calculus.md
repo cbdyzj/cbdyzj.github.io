@@ -1,4 +1,4 @@
-## Lambda Calculus
+# Lambda Calculus
 
 ### BNF
 
@@ -8,7 +8,7 @@
 <expr> ::= (<expr> <expr>)
 ```
 
-#### Axiom
+### Axiom
 
 - Alpha
 

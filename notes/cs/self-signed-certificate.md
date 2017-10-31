@@ -1,4 +1,4 @@
-### 步骤
+## 步骤
 
 1. 生成私钥
 
@@ -30,7 +30,7 @@ $ openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt
    需要server.key、server.crt
 
 
-### 说明
+## 说明
 
 X.509证书包含三个文件：key，csr，crt。
 

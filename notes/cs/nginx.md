@@ -1,4 +1,4 @@
-#### Compile and install
+## Compile and install
 
 ```shell
 # dependence: zlib, pcre, openssl
@@ -8,21 +8,19 @@ make
 make install
 ```
 
-#### Modules
+## Modules
 
-| Name       | Configuration                    |
-| ---------- | -------------------------------- |
-| Core       | --without-http                   |
-| Access     | --without-http_access_module     |
-| Auth Basic | --without-http_auth_basic_module |
-| Auto Index | --without-http_autoindex_module  |
-| FastCGI    | --without-http_fastcgi_module    |
-| Gzip       | --without-http_gzip_module       |
-| Proxy      | --without-http_proxy_module      |
-| Rewirite   | --without-http_rewrite_module    |
-| uWSGI      | —without-http_uwsgi_module       |
+- Core：--without-http
+- Access：--without-http_access_module
+- Auth Basic：--without-http_auth_basic_module
+- Auto Index：--without-http_autoindex_module
+- FastCGI：--without-http_fastcgi_module
+- Gzip：--without-http_gzip_module
+- Proxy：--without-http_proxy_module
+- Rewirite：--without-http_rewrite_module
+- uWSGI：—without-http_uwsgi_module
 
-#### Request phase
+## Request phase
 
 - post-read：解析完毕头
 - server-rewrite
@@ -36,7 +34,7 @@ make install
 - **content**
 - log
 
-#### Variable
+## Variable
 
 ```nginx
 $args
@@ -47,12 +45,10 @@ $request_uri
 $http_?
 ```
 
-#### Static resources
+## Static resources
 
 no content command in location
 
 - ngx_index: location /
 - ngx_autoindex: location pathname
-
-
 - ngx_static: location filename

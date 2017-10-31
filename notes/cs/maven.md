@@ -1,15 +1,15 @@
-| Memo                            |                   |
-| ------------------------------- | ----------------- |
-| war, compiler, javadoc, source  | maven plugin      |
-| mvn -N  io.takari:maven:wrapper | maven  wrapper    |
-| mvn install:install-file        | install local jar |
-| mvn deploy:deploy-file          | deploy local jar  |
-| failOnMissingWebXml             |                   |
-| maven.compiler.source           |                   |
-| maven.compiler.target           |                   |
-| project.build.sourceEncoding    | encoding          |
+# Maven
 
-#### Demo
+- maven plugin：war, compiler, javadoc, source
+- maven  wrapper：mvn -N  io.takari:maven:wrapper
+- install local jar ：mvn install:install-file
+- deploy local jar：mvn deploy:deploy-file
+- failOnMissingWebXml
+- maven.compiler.source
+- maven.compiler.target
+- encoding：project.build.sourceEncoding
+
+### Demo
 
 ```shell
 # deploy

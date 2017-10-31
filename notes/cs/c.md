@@ -1,6 +1,6 @@
-## C programming language
+# C programming language
 
-#### Type
+### Type
 
 ```c
 void v;
@@ -12,7 +12,7 @@ float f;
 double df;
 ```
 
-#### Constant
+### Constant
 
 ```c
 int i = 1;
@@ -20,7 +20,7 @@ long li = 1L;
 float f = 1.F;
 double df = 1.;
 ```
-#### Old style function 
+### Old style function 
 
 ```c
 int foo(); /* different from 'int foo(void);' */
@@ -31,7 +31,7 @@ int foo(param) int param;
 }
 ```
 
-#### Static
+### Static
 
 ```c
 static int a;
@@ -42,13 +42,13 @@ int foo(){
 }
 ```
 
-#### Register
+### Register
 
 ```c
 register int a; /* can't get address */
 ```
 
-#### macro
+### macro
 
 ```
 #include
@@ -65,34 +65,34 @@ register int a; /* can't get address */
 #ifndef
 ```
 
-#### Pointer and array
+### Pointer and array
 
 ```c
 int a[3];
 int* p = a; /* they are different */
 ```
 
-#### Array pointer
+### Array pointer
 
 ```c
 int (*a)[3];
 ```
 
-#### Functoin pointer
+### Functoin pointer
 
 ```c
 int func(char, int);
 int (*fp)(char, int) = func;
 ```
 
-#### C compiler
+### C compiler
 
 - cc -E -> main.i : C
 - cc -S -> main.s : assemble language
 - cc -c -> main.o : binary
 - cc -o -> main : executable
 
-#### Make
+### Make
 
 ```
 target... : prerequisites ...

@@ -1,6 +1,6 @@
-## jQuery
+# jQuery
 
-#### Selector
+###  Selector
 
 use ',' to merge selection
 
@@ -36,7 +36,7 @@ prev ~ siblings
 :button    :file
 ```
 
-#### Function
+##  Function
 
 ```javascript
 $([selector,[context]])

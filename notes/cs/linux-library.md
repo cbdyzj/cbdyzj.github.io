@@ -1,15 +1,13 @@
-| Library | Description                         | Note   |
-| ------- | ----------------------------------- | ------ |
-| zlib    | data compression                    | zlib1g |
-| glibc   | GNU C Library                       |        |
-| OpenSSL | security library                    |        |
-| PCRE    | Perl Compatible Regular Expressions |        |
+# Library
 
-### Debian
+- zlib：data compression，zlib1g
+- glibc：GNU C Library
+- OpenSSL：security library
+- PCRE：Perl Compatible Regular Expressions
 
-| Library         | Description |
-| --------------- | ----------- |
-| build-essential |             |
-| build-dep       |             |
+## Debian
+
+- build-essential
+- build-dep
 
 

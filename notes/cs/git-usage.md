@@ -1,3 +1,5 @@
+# git usage
+
 ```
 $ git merge  --squash
 $ git rebase  --interactive

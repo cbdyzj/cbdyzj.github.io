@@ -1,6 +1,4 @@
-![linux-systemd](./linux-systemd.png)
-
-### systemctl
+## systemctl
 
 ```shell
 # 重启系统
@@ -25,7 +23,7 @@ sudo systemctl hybrid-sleep
 sudo systemctl rescue
 ```
 
-### systemd-analyze
+## systemd-analyze
 
 ```shell
 # 查看启动耗时
@@ -40,7 +38,7 @@ systemd-analyze critical-chain
 # 显示指定服务的启动流
 systemd-analyze critical-chain atd.service
 ```
-### hostnamectl
+## hostnamectl
 
 ```shell
 # 显示当前主机的信息
@@ -50,7 +48,7 @@ hostnamectl
 sudo hostnamectl set-hostname rhel7
 ```
 
-### localectl
+## localectl
 
 ```shell
 # 查看本地化设置
@@ -61,7 +59,7 @@ sudo localectl set-locale LANG=en_GB.utf8
 sudo localectl set-keymap en_GB
 ```
 
-### timedatectl
+## timedatectl
 
 ```shell
 # 查看当前时区设置
@@ -76,7 +74,7 @@ sudo timedatectl set-time YYYY-MM-DD
 sudo timedatectl set-time HH:MM:SS
 ```
 
-### loginctl
+## loginctl
 
 ```shell
 # 列出当前session
@@ -89,7 +87,7 @@ loginctl list-users
 loginctl show-user cbdyzj
 ```
 
-### unit
+## unit
 
 - Service unit：系统服务
 - Target unit：多个 Unit 构成的一个组
@@ -168,7 +166,7 @@ sudo systemctl set-property httpd.service CPUShares=500
 # 依赖关系
 systemctl list-dependencies nginx.service
 ```
-### unit配置
+## unit配置
 
 每一个 Unit 都有一个配置文件，告诉 Systemd 怎么启动这个 Unit 。
 
@@ -176,7 +174,7 @@ Systemd 默认从目录`/etc/systemd/system/`读取配置文件。但是，里�
 
 `systemctl enable`命令用于在上面两个目录之间，建立符号链接关系。
 
-#### 配置文件状态
+### 配置文件状态
 
 ```shell
 # 列出所有配置文件
@@ -192,14 +190,14 @@ systemctl list-unit-files --type=service
 - masked：该配置文件被禁止建立启动链接
 
 
-#### 配置文件格式
+### 配置文件格式
 
 ```shell
 # 查看配置文件的内容
 systemctl cat sshd.socket
 ```
 
-##### [Unit]
+#### [Unit]
 
 - Description：简短描述
 - Documentation：文档地址
@@ -212,14 +210,14 @@ systemctl cat sshd.socket
 - Condition：当前 Unit 运行必须满足的条件，否则不会运行
 - Assert：当前 Unit 运行必须满足的条件，否则会报启动失败
 
-##### [Install]
+#### [Install]
 
 - WantedBy：它的值是一个或多个 Target，当前 Unit 激活时（enable）符号链接会放入`/etc/systemd/system`目录下面以 Target 名 + .wants后缀构成的子目录中
 - RequiredBy：它的值是一个或多个 Target，当前 Unit 激活时，符号链接会放入`/etc/systemd/system`目录下面以 Target 名 + .required后缀构成的子目录中
 - Alias：当前 Unit 可用于启动的别名
 - Also：当前 Unit 激活（enable）时，会被同时激活的其他 Unit
 
-##### [Service]
+#### [Service]
 
 - Type：定义启动时的进程行为。它有以下几种值。
 - Type=simple：默认值，执行ExecStart指定的命令，启动主进程
@@ -239,7 +237,7 @@ systemctl cat sshd.socket
 - TimeoutSec：定义 Systemd 停止当前服务之前等待的秒数
 - Environment：指定环境变量
 
-#### Target
+### Target
 
 ```shell
 # 查看当前系统的所有 Target
@@ -260,7 +258,7 @@ sudo systemctl set-default multi-user.target
 sudo systemctl isolate multi-user.target
 ```
 
-### 日志管理
+## 日志管理
 
 ```shell
 # 查看所有日志（默认情况下 ，只保存本次启动的日志）
