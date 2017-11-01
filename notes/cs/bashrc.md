@@ -1,4 +1,4 @@
-## shell
+## bash
 
 ```shell
 # set shell prompt
