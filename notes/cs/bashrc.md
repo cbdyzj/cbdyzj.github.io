@@ -6,8 +6,7 @@ PS1='\u@ \w\n$ '
 
 # set alias
 alias ls='ls -G'
-alias ll='ls -l'
-alias la='ls -la'
+alias ll='ls -alh'
 alias grep='grep --color'
 alias dk='docker'
 alias dkc='docker-compose'
