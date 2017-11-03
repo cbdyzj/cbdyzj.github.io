@@ -7,7 +7,7 @@ const connection = mysql.createConnection({
     database: 'sys',
 })
 
-connection.connect();
+connection.connect()
 const query = (...args) =>
     new Promise((resolve, reject) =>
         connection.query(...args, (error, results, fields) =>
