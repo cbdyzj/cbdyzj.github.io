@@ -8,10 +8,12 @@ const connection = mysql.createConnection({
 })
 
 connection.connect()
+
 const query = (...args) =>
     new Promise((resolve, reject) =>
         connection.query(...args, (error, results, fields) =>
             error ? reject(error) : resolve({ results, fields })))
+
 
 async function q() {
     const { results } = await query('SELECT ? FROM host_summary', ['host'])
