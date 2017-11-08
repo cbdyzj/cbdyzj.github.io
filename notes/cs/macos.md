@@ -1,3 +1,5 @@
+## dd
+
 ```shell
 # 查看设备
 diskutil list
@@ -10,4 +12,10 @@ dd if=in.iso of=/dev/rdiskx bs=1m
 
 # 弹出u盘
 diskutil eject /dev/diskx
+```
+
+## dock
+
+```shell
+defaults write com.apple.dock ResetLaunchPad -bool TRUE; killall Dock
 ```
