@@ -2,6 +2,9 @@
 
 ```mysql
 CREATE DATABASE 一个数据库;
+CREATE DATABASE 一个数据库
+  DEFAULT CHARACTER SET utf8
+  COLLATE utf8_general_ci;
 DROP DATABASE 一个数据库;
 ```
 
