@@ -2,7 +2,13 @@ version: '3'
 services:
   mysql:
     image: mariadb
+    container_name: mysql
     ports:
     - '3306:3306'
     environment:
     - MYSQL_ROOT_PASSWORD=password
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+volumes:
+  mysql-data: {}

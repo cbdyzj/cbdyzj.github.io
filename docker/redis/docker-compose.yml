@@ -2,6 +2,7 @@ version: '3'
 services:
   redis:
     image: redis
+    container_name: rabbitmq
     ports:
     - '6379:6379'
     
