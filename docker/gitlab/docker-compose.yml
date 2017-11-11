@@ -1,7 +1,7 @@
 version: '3'
 services:
   gitlab:
-    image: 'gitlab/gitlab-ce'
+    image: gitlab/gitlab-ce
     hostname: '127.0.0.1'
     environment:
       GITLAB_OMNIBUS_CONFIG: |
@@ -11,3 +11,5 @@ services:
     ports:
       - '9780:9780'
       - '9722:22'
+      
+      
