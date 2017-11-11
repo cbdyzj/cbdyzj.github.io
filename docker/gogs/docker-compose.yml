@@ -10,4 +10,7 @@ services:
       - gogs-data:/data
 volumes:
   gogs-data:
-  
+networks:
+  default:
+    external:
+      name: docker-network

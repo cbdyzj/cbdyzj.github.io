@@ -11,3 +11,7 @@ services:
       - mysql-data:/var/lib/mysql
 volumes:
   mysql-data:
+networks:
+  default:
+    external:
+      name: docker-network
