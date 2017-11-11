@@ -8,7 +8,6 @@ services:
       - '10022:22'
     volumes:
       - gogs-data:/data
-
 volumes:
-  gogs-data: {}
+  gogs-data:
   

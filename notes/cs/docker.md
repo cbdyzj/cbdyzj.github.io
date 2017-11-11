@@ -1,18 +1,13 @@
-### 基本概念
+# Docker
 
-- 镜像（Image）
-- 容器（Container）
-- 仓库（Repository）
+## 基本概念
 
-**容器**（Container）可以看作是**镜像**（Image）实例。容器可以被创建、启动、停止、删除、暂停等。当容器需要写文件时，应当使用**数据卷**（Volume）
+- 镜像（Image）：容器的原型
+- 容器（Container）：镜像的实例
+- 仓库（Repository）：镜像仓库，`<仓库>:<标签>`对应一个具体镜像
+- 数据卷（Volume）：用于存储容器运行文件
 
-一个**Docker Registry**中可以包含多个**仓库**（Repository），每个仓库可以包含多个**标签**（Tag），每个标签对应一个镜像，形式为：`<仓库名>:<标签>`，默认标签是`latest`
-
-仓库名经常以两段式路径形式出现，比如 `jwilder/nginx-proxy`，前者往往意味着Docker Registry多用户环境下的用户名，后者则往往是对应的软件名
-
-> ubuntu:14.04、ubuntu:latest
-
-### 常用参数
+## 参数
 
 - -i：交互式操作
 - -t：终端
@@ -22,7 +17,7 @@
 - --name：指定容器名字
 - -d：后台进程
 
-### 常用命令
+## Dockerfile
 
 - FROM：基础镜像
 - RUN：在shell或exec环境下执行的命令，将创建一个新层
@@ -33,3 +28,23 @@
 - ENTRYPOINT：配置一个可执行的命令，只能使用一次
 - WORKDIR：指定`RUN`、`CMD`与`ENTRYPOINT` 命令的工作目录
 - ENV：环境变量
+
+## Network
+
+- 网络隔离
+- 网络驱动：本地网络、全局网络
+- DNS服务：为容器分配一个内部域名，可以用于服务发现
+
+### 默认网络
+
+- host：和宿主机共享网络栈
+- bridge：桥接，网桥，`veth`
+- container：使用容器网络
+- none：设置基本网络设施，不设置网络
+- 用户自定义：bridge、overlay、macvlan
+  - overlay：`VxLAN`隧道，用UDP封装链路层的以太网包
+  - macvlan：虚拟mac地址
+
+## Volume
+
+- ​
