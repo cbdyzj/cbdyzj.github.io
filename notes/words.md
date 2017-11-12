@@ -1,3 +1,4 @@
+- tty设备文件
 - Gogs
 - Omnibus
 - IC Design
