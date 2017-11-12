@@ -1,9 +1,8 @@
-/**********************
-快速平方根倒数
-其中用到了牛顿法
-x=(y/x+x)/2
-x=sqrt(y)
-***********************/
+/**
+ * 快速平方根倒数，其中用到了牛顿法
+ * x=(y/x+x)/2
+ * x=sqrt(y)
+ */
 float inv_sqrt(float x) {
 	float xhalf = 0.5f*x;
 	int i = *(int*)&x; // get bits for floating VALUE 

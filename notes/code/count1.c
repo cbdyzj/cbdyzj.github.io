@@ -1,5 +1,8 @@
-//统计int整数中有多少1的两种方法
-//& 0x01 by bit and then do 1 bit shift
+
+/**
+ * 统计int整数中有多少1的两种方法
+ * & 0x01 by bit and then do 1 bit shift
+ */
 int NumCount1(int a) {
     int num = 0;
     while(a) {
@@ -9,7 +12,7 @@ int NumCount1(int a) {
     return num;
 }
 
-//minus 1 then &
+// minus 1 then &
 int NumCount2(int a) {
     int num = 0;
     while(a) {

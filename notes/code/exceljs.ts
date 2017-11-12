@@ -1,5 +1,5 @@
 import * as Excel from 'exceljs'
-import { Application, Router } from 'express'
+import { Application } from 'express'
 import * as express from 'express'
 
 let workbook: any = new Excel.Workbook()
@@ -16,12 +16,11 @@ worksheet.addRow({ id: 1, name: 'aa', age: 17 })
 // workbook.xlsx.writeFile('excel.xlsx')
 
 const app: Application = express()
-const router: Router = express.Router()
 
-router.get('/excel', (req, res) => {
+app.get('/excel', (req, res) => {
     res.setHeader('Content-Type', 'application/vnd.openxmlformats')
     res.setHeader("Content-Disposition", "attachment;filename=" + encodeURI('workbook.xlsx'))
     workbook.xlsx.write(res).then(() => res.end())
 })
 
-app.use(router).listen(3000)
+app.listen(3000)

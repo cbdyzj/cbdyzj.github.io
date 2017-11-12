@@ -17,8 +17,8 @@ function splitExpreion(expreion: string): string[] {
 }
 
 function suffixArray(exprArray: string[]) {
-    let outStack: string[] = []
-    let symbolStack: string[] = []
+    const outStack: string[] = []
+    const symbolStack: string[] = []
     for (let expr of exprArray) {
         if (isNumber(expr)) {
             outStack.push(expr)
@@ -64,9 +64,9 @@ function suffixArray(exprArray: string[]) {
 }
 
 function clacStack(outStack: string[]): number {
-    let calcStack: number[] = []
+    const calcStack: number[] = []
     while (outStack.length > 0) {
-        let e = outStack.shift()
+        const e = outStack.shift()
         if (isNumber(e)) {
             calcStack.push(parseFloat(e))
             continue
@@ -94,7 +94,7 @@ function clacStack(outStack: string[]): number {
 
 
 export function calc(expreion: string): number {
-    let exprArray = splitExpreion(expreion)
-    let outStack = suffixArray(exprArray)
+    const exprArray = splitExpreion(expreion)
+    const outStack = suffixArray(exprArray)
     return clacStack(outStack)
 }
