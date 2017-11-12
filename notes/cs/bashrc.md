@@ -1,10 +1,10 @@
-## bash
+## .bash_profile
 
 ```shell
-# set shell prompt
+# shell prompt
 PS1='\u@ \w\n$ '
 
-# set alias
+# alias
 alias ls='ls -G'
 alias ll='ls -alh'
 alias grep='grep --color'
@@ -17,31 +17,30 @@ alias tnpm='npm --registry=http://registry.npm.taobao.org'
 alias convert-gb='iconv -f gb18030'
 alias du0='du -hd0'
 
-# optional nvm
+# nvm optional
 alias nvm_init='. "/usr/local/opt/nvm/nvm.sh"'
 alias node6='nvm_init && nvm use --delete-prefix 6'
 alias node0='nvm_init && nvm use --delete-prefix 0.12'
 ```
 
-## git
+## .gitconfig
 
 ```
-git config --global core.quotepath false
-
 [user]
 	name = cbdyzj
 	email = cbdyzj@gmail.com
 [alias]
 	ss = status -s
-	cm = commit
-	br = branch
 	co = checkout
+	br = branch
+	cm = commit
 	sm = submodule
+[core]
+	quotepath = false
 ```
 
-## input
+## .inputrc
 
 ```
-# .inputrc
 set completion-ignore-case on
 ```
