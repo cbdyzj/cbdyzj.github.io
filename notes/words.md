@@ -1,3 +1,4 @@
+- qr-image
 - tty设备文件
 - Gogs
 - Omnibus
