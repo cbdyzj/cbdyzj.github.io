@@ -40,6 +40,8 @@
 - disown
 - nohup
 - top
-- iotop
 - iostat
 - netstat
+- lsof
+- nc
+- wc
