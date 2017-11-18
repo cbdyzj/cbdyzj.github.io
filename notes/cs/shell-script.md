@@ -34,9 +34,9 @@
   - 逻辑运算：&&、||
   - 字符串运算：=、!=、-z、-n、str
   - 文件测试运算：
-    - b块设备、-c字符设备、-d目录、-f普通文件、-g是否设置sgid、
-    - k是否设置sticky bit、-p是否为具体名管道、-u是否设置suid、
-    - r是否可读、-w是否可写、-x是否可执行、-s是否为空、-e是否存在
+     - 块设备-b、字符设备-c、目录-d、普通文件-f、是否设置sgid -g、
+     - 是否设置sticky bit -k、是否为具体名管道-p、是否设置suid -u、
+     - 是否可读-r、是否可写-w、是否可执行-x、是否为空-s、是否存在-e
 - 流程控制：
   - if condition then elif then else fi
   - for val in arr do done
