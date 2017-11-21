@@ -1,0 +1,14 @@
+- jenkins
+- k8s
+- docker
+- openstack
+- hproxy
+- nginx
+- lvs
+- django - python
+- flask
+- elk
+- ansible - 推脚本
+- saltstack
+- puppet
+- cobber - 批量装系统

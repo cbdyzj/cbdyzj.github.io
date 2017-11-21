@@ -1,24 +1,19 @@
 'use strict'
-const mysql = require('mysql')
-const connection = mysql.createConnection({
+const mysql = require('mysql2/promise');
+
+const config = {
     host: '127.0.0.1',
     user: 'root',
-    password: 'rootpassword',
+    password: 'password',
     database: 'sys',
-})
-
-connection.connect()
-
-const query = (...args) =>
-    new Promise((resolve, reject) =>
-        connection.query(...args, (error, results, fields) =>
-            error ? reject(error) : resolve({ results, fields })))
-
-
-async function q() {
-    const { results } = await query('SELECT ? FROM host_summary', ['host'])
-    console.log(results)
-    connection.end()
 }
 
-q.call()
+async function main() {
+    const connection = await mysql.createConnection(config)
+    const [rows, fields] = await connection.execute('SELECT NOW();')
+    console.log(rows)
+}
+
+if (require.main === module) {
+    main().then(() => process.exit(0))
+}
