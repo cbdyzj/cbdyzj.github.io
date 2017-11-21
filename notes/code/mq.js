@@ -36,5 +36,7 @@ async function producer() {
     }
 }
 
-consumer()
-producer()
+if (require.main === module) {
+    consumer()
+    producer()
+}

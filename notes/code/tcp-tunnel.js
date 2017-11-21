@@ -11,4 +11,7 @@ function tunntlTcp(host, port) {
     return { from: server.listen.bind(server) }
 }
 
-tunntlTcp('127.0.0.1', 8000).from(8080)
+
+if (require.main === module) {
+    tunntlTcp('127.0.0.1', 8000).from(8080)
+}

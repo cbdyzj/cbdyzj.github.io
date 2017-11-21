@@ -1,9 +1,8 @@
-import * as Excel from 'exceljs'
-import { Application } from 'express'
-import * as express from 'express'
+const Excel = require('exceljs')
+const express = require('express')
 
-let workbook: any = new Excel.Workbook()
-let worksheet = workbook.addWorksheet('sheet')
+const workbook = new Excel.Workbook()
+const worksheet = workbook.addWorksheet('sheet')
 
 worksheet.columns = [
     { header: 'Id', key: 'id', width: 10 },
@@ -13,9 +12,7 @@ worksheet.columns = [
 
 worksheet.addRow({ id: 1, name: 'aa', age: 17 })
 
-// workbook.xlsx.writeFile('excel.xlsx')
-
-const app: Application = express()
+const app = express()
 
 app.get('/excel', (req, res) => {
     res.setHeader('Content-Type', 'application/vnd.openxmlformats')
@@ -23,4 +20,6 @@ app.get('/excel', (req, res) => {
     workbook.xlsx.write(res).then(() => res.end())
 })
 
-app.listen(3000)
+if (require.main === module) {
+    app.listen(3000)
+}

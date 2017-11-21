@@ -8,4 +8,6 @@ const proxy = httpProxy.createProxyServer({ changeOrigin: true })
 const gateway = (req, res) => proxy.web(req, res, { target: 'http://jianzhao.org/' })
 
 // 启动http服务
-http.createServer(gateway).listen(8000, () => console.info('gateway inited to 8000'))
+if (require.main === module) {
+    http.createServer(gateway).listen(8000)
+}
