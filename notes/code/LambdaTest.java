@@ -10,7 +10,7 @@ import java.util.stream.Stream;
  * @author cbdyzj
  */
 @Slf4j
-public class TestCase {
+public class LambdaTest {
 
     @Test
     public void test() {

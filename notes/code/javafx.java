@@ -10,7 +10,7 @@ import lombok.val;
 /**
  * @author cbdyzj
  */
-public class Jfx extends Application {
+public class JavaFx extends Application {
 
     public static void main(String[] args) {
         launch(args);
