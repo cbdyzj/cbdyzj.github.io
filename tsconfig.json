@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "target": "es2017",
+        "lib": [
+            "es2017"
+        ]
+    },
+    "exclude": [
+        "node_modules"
+    ],
+    "include": [
+        "database"
+    ]
+}

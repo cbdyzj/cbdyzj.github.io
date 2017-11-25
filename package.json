@@ -1,0 +1,25 @@
+{
+  "name": "cbdyzj.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cbdyzj/cbdyzj.github.io.git"
+  },
+  "keywords": [],
+  "author": "cbdyzj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cbdyzj/cbdyzj.github.io/issues"
+  },
+  "homepage": "https://github.com/cbdyzj/cbdyzj.github.io#readme",
+  "dependencies": {
+    "mysql2": "latest",
+    "sequelize": "latest"
+  },
+  "devDependencies": {
+    "@types/sequelize": "latest"
+  }
+}
