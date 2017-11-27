@@ -6,9 +6,9 @@ export function define(sequelize, DataTypes) {
             primaryKey: true,
             autoIncrement: true,
         },
-        groupId: {
-            field: 'group_id',
-            type: DataTypes.INTEGER,
+        groupNo: {
+            field: 'group_no',
+            type: DataTypes.STRING,
             allowNull: false,
         },
         name: {
@@ -30,7 +30,8 @@ export function define(sequelize, DataTypes) {
 export function associate(models) {
     const { Test, TestGroup } = models
     Test.belongsTo(TestGroup, {
-        foreignKey: 'groupId',
+        foreignKey: 'groupNo',
+        targetKey: 'groupNo',
         constraints: false,
     })
 }

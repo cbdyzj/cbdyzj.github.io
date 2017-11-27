@@ -6,6 +6,11 @@ export function define(sequelize, DataTypes) {
             primaryKey: true,
             autoIncrement: true,
         },
+        groupNo: {
+            field: 'group_no',
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
         name: {
             type: DataTypes.STRING,
             allowNull: false,
@@ -15,4 +20,13 @@ export function define(sequelize, DataTypes) {
             freezeTableName: true,
             tableName: 'test_groups',
         })
+}
+
+export function associate(models) {
+    const { Test, TestGroup } = models
+    TestGroup.hasMany(Test, {
+        foreignKey: 'groupNo',
+        targetKey: 'groupNo',
+        constraints: false,
+    })
 }

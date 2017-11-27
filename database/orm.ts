@@ -2,14 +2,14 @@ import * as Sequelize from 'sequelize'
 import { Options } from 'sequelize'
 
 import { define as defineTest, associate as associateTest } from './models/Test'
-import { define as defineTestGroup } from './models/TestGroup'
+import { define as defineTestGroup, associate as associateTestGroup } from './models/TestGroup'
 
 export const options: Options = {
     dialect: 'mysql',
     host: 'localhost',
     port: 3306,
     username: 'root',
-    password: 'password',
+    password: 'rootpassword',
     database: 'test',
     timezone: '+08:00',
     isolationLevel: 'READ COMMITTED',
@@ -20,6 +20,7 @@ export const sequelize = new Sequelize(options)
 defineTest(sequelize, Sequelize)
 defineTestGroup(sequelize, Sequelize)
 associateTest(sequelize.models)
+associateTestGroup(sequelize.models)
 
 // ---------------- 简单测试 ----------------
 
@@ -29,17 +30,14 @@ async function main() {
     await TestGroup.sync()
     await Test.drop()
     await Test.sync()
-    await TestGroup.create({ id: 1, name: '组1' })
+    await Test.create({ groupNo: 'no.1', name: 'xixi' })
+    await TestGroup.create({ groupNo: 'no.1', name: 'haha' })
 
-    const t = await Test.findOrBuild({
-        where: { name: 'haha' },
-        defaults: {
-            name: 'haha',
-            groupId: 1,
-        }
+    const t = await Test.findOne({
+        where: { name: 'xixi' },
+        include: [TestGroup],
     })
-    const tt = await t[0].save()
-    console.log(tt.dataValues)
+    console.log(t.get({ plain: true }))
 }
 if (require.main === module) {
     main().then(() => process.exit(0))
