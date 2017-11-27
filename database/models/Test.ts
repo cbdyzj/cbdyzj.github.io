@@ -1,5 +1,5 @@
 export function define(sequelize, DataTypes) {
-    const Test = sequelize.define('Test', {
+    return sequelize.define('Test', {
         id: {
             type: DataTypes.INTEGER,
             allowNull: false,
