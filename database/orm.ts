@@ -33,12 +33,15 @@ async function main() {
     await Test.create({ groupNo: 'no.1', name: 'xixi' })
     await Test.create({ groupNo: 'no.1', name: 'hehe' })
     await TestGroup.create({ groupNo: 'no.1', name: 'haha' })
-
-    const t = await Test.findOne({
-        where: { name: 'xixi' },
-        include: [TestGroup],
+    // 多关联一
+    const ts = await Test.findAll({
+        include: [{
+            model: TestGroup,
+            where: { name: 'haha' },
+        }],
     })
-
+    console.log(JSON.stringify(ts, null, 2))
+    // 一关联多
     const tg = await TestGroup.findOne({
         where: { name: 'haha' },
     })
