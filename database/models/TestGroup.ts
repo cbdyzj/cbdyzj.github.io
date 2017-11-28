@@ -25,8 +25,8 @@ export function define(sequelize, DataTypes) {
 export function associate(models) {
     const { Test, TestGroup } = models
     TestGroup.hasMany(Test, {
+        sourceKey: 'groupNo',
         foreignKey: 'groupNo',
-        targetKey: 'groupNo',
         constraints: false,
     })
 }

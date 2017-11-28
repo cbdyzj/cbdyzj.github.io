@@ -31,13 +31,19 @@ async function main() {
     await Test.drop()
     await Test.sync()
     await Test.create({ groupNo: 'no.1', name: 'xixi' })
+    await Test.create({ groupNo: 'no.1', name: 'hehe' })
     await TestGroup.create({ groupNo: 'no.1', name: 'haha' })
 
     const t = await Test.findOne({
         where: { name: 'xixi' },
         include: [TestGroup],
     })
-    console.log(t.get({ plain: true }))
+
+    const tg = await TestGroup.findOne({
+        where: { name: 'haha' },
+    })
+    const tgt = await tg.getTests()
+    console.log(JSON.stringify(tgt, null, 2))
 }
 if (require.main === module) {
     main().then(() => process.exit(0))
