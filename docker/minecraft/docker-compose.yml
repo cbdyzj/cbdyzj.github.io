@@ -4,14 +4,27 @@ services:
     image: itzg/minecraft-server
     container_name: minecraft
     ports:
-      - '25565:25565'
-    environment:
-      -  EULA=TRUE
+      - "25565:25565"
     volumes:
-      - minecraft-data:/data
+      - "mc:/data"
+    environment:
+      EULA: "TRUE"
+      CONSOLE: "false"
+      ENABLE_RCON: "true"
+      RCON_PASSWORD: "password"
+      RCON_PORT: 28016
     restart: always
+  rcon:
+    image: itzg/rcon
+    container_name: rcon
+    ports:
+      - "4326:4326"
+      - "4327:4327"
+    volumes:
+      - "rcon:/opt/rcon-web-admin/db"
 volumes:
-  minecraft-data:
+  mc:
+  rcon:
 networks:
   default:
     external:
