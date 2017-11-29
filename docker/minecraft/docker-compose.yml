@@ -1,0 +1,18 @@
+version: '3'
+services:
+  minecraft:
+    image: itzg/minecraft-server
+    container_name: minecraft
+    ports:
+      - '25565:25565'
+    environment:
+      -  EULA=TRUE
+    volumes:
+      - minecraft-data:/data
+    restart: always
+volumes:
+  minecraft-data:
+networks:
+  default:
+    external:
+      name: docker-network

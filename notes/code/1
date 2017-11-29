@@ -5,4 +5,4 @@ const sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
 const setContains = (set, subset) => subset.every(e => set.includes(e))
 
 # py 父集含子集
-setContains = lambda a, b: [i for i in b if i not in a] == []
+setContains = lambda set, subset: [e for e in subset if e not in set] == []
