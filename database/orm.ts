@@ -1,6 +1,5 @@
 import * as Sequelize from 'sequelize'
 import { Options } from 'sequelize'
-
 import { define as defineTest, associate as associateTest } from './models/Test'
 import { define as defineTestGroup, associate as associateTestGroup } from './models/TestGroup'
 
@@ -17,51 +16,31 @@ export const options: Options = {
 }
 
 export const sequelize = new Sequelize(options)
+
 defineTest(sequelize, Sequelize)
 defineTestGroup(sequelize, Sequelize)
 associateTest(sequelize.models)
 associateTestGroup(sequelize.models)
 
-// ---------------- 简单测试 ----------------
+export const print = r => console.log(JSON.stringify(r, null, 2))
+
+// ---------------- 建立表，初始化数据 ----------------
 
 const { Test, TestGroup } = sequelize.models
-const log = r => console.log(JSON.stringify(r, null, 2))
-async function main() {
+
+export async function init() {
+    // 新建表
     await TestGroup.drop()
     await TestGroup.sync()
     await Test.drop()
     await Test.sync()
+
+    // 初始化数据
     await TestGroup.create({ groupNo: 'no.1', name: 'haha' })
     await Test.create({ groupNo: 'no.1', name: 'xixi', quantity: 17 })
     await Test.create({ groupNo: 'no.1', name: 'hehe', quantity: 7 })
-
-    // 多关联一
-    const t = await Test.findAll({
-        include: [{
-            model: TestGroup,
-            where: { name: 'haha' },
-        }],
-    })
-    // log(t)
-
-    // 一关联多
-    const tg = await TestGroup.findOne({
-        where: { name: 'haha' },
-    })
-    const tgt = await tg.getTests()
-    // log(t)
-
-    // 使用sequelize的方法
-    const ts = await Test.findAll({
-        attributes: [
-            'groupNo',
-            [sequelize.fn('sum', sequelize.col('quantity')), 'sum'],
-            [sequelize.literal('AVG(`quantity`)'), 'avg'],
-        ],
-        where: { groupNo: 'no.1' }
-    })
-    log(ts)
 }
+
 if (require.main === module) {
-    main().then(() => process.exit(0))
+    init().then(() => process.exit(0))
 }
