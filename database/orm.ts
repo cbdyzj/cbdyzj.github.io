@@ -9,7 +9,7 @@ export const options: Options = {
     host: 'localhost',
     port: 3306,
     username: 'root',
-    password: 'rootpassword',
+    password: 'password',
     database: 'test',
     timezone: '+08:00',
     isolationLevel: 'READ COMMITTED',
@@ -25,28 +25,42 @@ associateTestGroup(sequelize.models)
 // ---------------- 简单测试 ----------------
 
 const { Test, TestGroup } = sequelize.models
+const log = r => console.log(JSON.stringify(r, null, 2))
 async function main() {
     await TestGroup.drop()
     await TestGroup.sync()
     await Test.drop()
     await Test.sync()
-    await Test.create({ groupNo: 'no.1', name: 'xixi' })
-    await Test.create({ groupNo: 'no.1', name: 'hehe' })
     await TestGroup.create({ groupNo: 'no.1', name: 'haha' })
+    await Test.create({ groupNo: 'no.1', name: 'xixi', quantity: 17 })
+    await Test.create({ groupNo: 'no.1', name: 'hehe', quantity: 7 })
+
     // 多关联一
-    const ts = await Test.findAll({
+    const t = await Test.findAll({
         include: [{
             model: TestGroup,
             where: { name: 'haha' },
         }],
     })
-    console.log(JSON.stringify(ts, null, 2))
+    // log(t)
+
     // 一关联多
     const tg = await TestGroup.findOne({
         where: { name: 'haha' },
     })
     const tgt = await tg.getTests()
-    console.log(JSON.stringify(tgt, null, 2))
+    // log(t)
+
+    // 使用sequelize的方法
+    const ts = await Test.findAll({
+        attributes: [
+            'groupNo',
+            [sequelize.fn('sum', sequelize.col('quantity')), 'sum'],
+            [sequelize.literal('AVG(`quantity`)'), 'avg'],
+        ],
+        where: { groupNo: 'no.1' }
+    })
+    log(ts)
 }
 if (require.main === module) {
     main().then(() => process.exit(0))

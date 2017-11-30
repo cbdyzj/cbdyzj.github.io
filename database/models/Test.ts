@@ -15,6 +15,10 @@ export function define(sequelize, DataTypes) {
             type: DataTypes.STRING,
             allowNull: false,
         },
+        quantity: {
+            type: DataTypes.INTEGER,
+            defaultValue: 0,
+        },
         time: {
             type: DataTypes.DATE,
             allowNull: false,
