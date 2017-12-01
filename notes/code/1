@@ -8,4 +8,4 @@ const setContains = (set, subset) => subset.every(e => set.includes(e))
 setContains = lambda set, subset: [e for e in subset if e not in set] == []
 
 # py fibonacci数
-fibonacci = lambda n: fibonacci(n - 1) + fibonacci(n - 2) if n not in [1, 2] else 1
+fibonacci = lambda n: fibonacci(n - 1) + fibonacci(n - 2) if n not in [1, 2] else n
