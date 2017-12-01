@@ -37,8 +37,8 @@ export async function init() {
 
     // 初始化数据
     await TestGroup.create({ groupNo: 'no.1', name: 'haha' })
-    await Test.create({ groupNo: 'no.1', name: 'xixi', quantity: 17 })
-    await Test.create({ groupNo: 'no.1', name: 'hehe', quantity: 7 })
+    await Test.create({ groupNo: 'no.1', name: 'xixi', quantity: 17, time: new Date })
+    await Test.create({ groupNo: 'no.1', name: 'hehe', quantity: 7, time: '2017-12-01 12:00:00' })
 }
 
 if (require.main === module) {
