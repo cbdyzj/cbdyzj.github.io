@@ -1,5 +1,6 @@
-- 书单
-- 言论
-- 备注
-- 词语
+# Cbdy's GitHub Pages
 
+- book-list
+- words
+- sayings
+- remarks

@@ -6,8 +6,8 @@ body {
     align-items: center;
 }
 
-#main {
-    width: 75%;
+.markdown-body {
+    margin-top: 3%;
+    width: 70%;
     max-width: 50rem;
-    margin-top: 5%;
 }
