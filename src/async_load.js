@@ -27,7 +27,7 @@ class PagesLoader {
         }
     }
 
-    async  loadArticle(name) {
+    async loadArticle(name) {
         await this.loadHtml(`/notes/${name}.md`)
     }
 
@@ -39,7 +39,7 @@ class PagesLoader {
 }
 
 document.onreadystatechange = function () {
-    if (document.readyState === "interactive") {
+    if (document.readyState === 'interactive') {
         const pagesLoader = new PagesLoader
         addEventListener('popstate', () => pagesLoader.doLoad())
         pagesLoader.doLoad()
