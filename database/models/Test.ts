@@ -18,15 +18,15 @@ export function define(sequelize, DataTypes) {
         quantity: {
             type: DataTypes.INTEGER,
             defaultValue: 0,
+            allowNull: false,
         },
         time: {
             type: DataTypes.DATE,
             allowNull: false,
-            defaultValue: DataTypes.NOW
+            defaultValue: sequelize.fn('current_timestamp'),
         }
     }, {
             underscored: true,
-            freezeTableName: true,
             tableName: 'tests',
         })
 }
