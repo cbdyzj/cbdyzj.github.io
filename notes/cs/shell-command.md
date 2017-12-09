@@ -44,3 +44,7 @@
 - lsof
 - nc
 - wc
+- file
+- xxd
+- strings
+- readelf/greadelf
