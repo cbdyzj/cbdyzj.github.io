@@ -19,7 +19,7 @@ class PagesLoader {
     }
 
     async loadCatalog() {
-        await this.loadHtml(`/blogs/catalog.md`)
+        await this.loadHtml(`/blogs/目录.md`)
         const ul = $('ul')
         for (const li of ul.children) {
             const name = li.innerText

@@ -7,9 +7,7 @@ async function main() {
     // 多关联一
     const t = await Test.findAll({
         where: { groupNo: 'no.1' },
-        include: [{
-            model: TestGroup,
-        }],
+        include: [TestGroup],
     })
     print(t)
 }
