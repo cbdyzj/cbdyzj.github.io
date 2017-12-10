@@ -2,7 +2,7 @@
 - k8s
 - docker
 - openstack
-- hproxy
+- haproxy
 - nginx
 - lvs
 - django - python

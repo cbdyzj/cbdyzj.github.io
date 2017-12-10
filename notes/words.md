@@ -1,3 +1,11 @@
+- 你一生的故事：姜峯楠
+- 领域驱动设计
+- lambda演算
+- 毛泽东选集：毛泽东
+- 资本主义社会制度的数学原理：玄睛
+- 八次危机
+- 猫娘姐妹
+- frp：内网穿透
 - 中国外交六十年
 - 乡土中国
 - 源氏物语，紫式部，丰子恺
@@ -59,6 +67,7 @@
 - 科索沃战争
 - 工业化
 - 后工业化时代
+- 自制编程语言：前桥和弥
 - 提婆达多
 - 至道学宫
 - 星宿
@@ -81,7 +90,6 @@
 - 丁香：香料，桃金娘科蒲桃属，原产于印度尼西亚
 - DNS
 - LVS：Linux Virtual Server
-- Odoo
 - 嬢嬢
 - buhuibaidu.me：为你百度
 - love me, love my dog：about JavaScript and TC39
@@ -173,7 +181,7 @@
 - 皮克迪现象
 - 友邦惊诧论
 - 我看三农：春过雪消
-- 编译书单：学习编程语言与编译优化的一个书单 RednaxelaFX
+- 编译书单：学习编程语言与编译优化的一个书单，RednaxelaFX
 - 论住宅问题：马恩全集第十八卷 
 - 朗兰兹纲领
 - America Alone
@@ -222,7 +230,7 @@
 - 断头王后
 - 高效能人士的七个习惯
 - 约翰多恩：没有谁是一座孤岛 
-- 卢昌海博士
+- 卢昌海
 - Arcade Fire
 - 外交均衡理论
 - 雅尔塔体系
@@ -230,7 +238,6 @@
 - 欺诈游戏
 - 疯狂的麦克斯
 - 2017 Node.js 开发框架比较
-- 东京女子图鉴：小资
 - 老龄化：人口庞氏骗局 
 - LHC
 - 夸克：纯能量 宇宙是能量的
@@ -242,18 +249,17 @@
 - 达维特
 - 斯特拉文斯基
 - 勃兰登堡协奏曲
-- 性调教：BDSM 葛瑞恩亚文化
-- 亚当斯密：经济行为 看不见的手 自由贸易 劳动价值
-- 滑稽列传：史记 滑（gu）稽列传
+- 性调教：BDSM，葛瑞恩亚文化
+- 亚当斯密
+- 滑稽列传：史记——滑（gu）稽列传
 - 图灵机杂思
 - IPO：上市
 - 帕累托最优
 - 分税制改革和土地出让金
-- M0 M1 M2：流通中现金 狭义货币供应量 广义货币供应量 
+- M0，M1，M2：流通中现金，狭义货币供应量，广义货币供应量 
 - 抵扣增值税
 - 二级市场
 - 铸币税
-- 私募基金
 - 个人公司：一个人的公司 
 - 西门豹：西门豹治邺 
 - RxJava
@@ -264,10 +270,10 @@
 - 伊比利亚半岛
 - 马基雅维利主义：为了达到一个最高尚的目的，可以使用最卑鄙的手段 
 - 科举：贵族的游戏 
-- Lombok：delombok 
+- Lombok
 - 循环展开优化
 - 爱彼迎：Airbnb 
-- 哺乳动物的角：洞角 实角 叉角羚角 长颈鹿角 表皮角等
+- 哺乳动物的角：洞角、实角、叉角羚角、长颈鹿角、表皮角
 - 国际云图
 - 垄耕
 - 拉丁语
@@ -275,25 +281,22 @@
 - 查士丁尼法典
 - 格里高利日历
 - 重来2：远程工作
-- 文明之光：吴军
 - 皮埃尔布迪厄
 - reStructuredText
 - Promise/Future
 - FRP：Functional reactive programming 
-- 浪潮之巅：吴军
 - 未来简史：Yuval Noah Harari
-- 时间：时间拉开了阶级的差距，而未来是科技
-- 人文主义：人是第一可宝贵的 泛灵论 有神论 人文主义 
+- 人文主义
 - IPO
 - 做空、买空、卖空
 - 金融危机
-- 美联储：联邦储备银行系统 发行美元 制定利率
+- 美联储：联邦储备银行系统
 - 牛津运动
 - 天使投资（Angel Investment）
-- 赛伯乐（Cybernaut）：朱敏
-- 北极光（Northern Light）：邓峰 柯岩 
-- 风投（Venture Capital Funds）：机构 个人 特拉华州 开曼群岛 巴哈马
-- 私募基金：收购 重组 出售 
+- 赛伯乐（Cybernaut）
+- 北极光（Northern Light） 
+- 风投（Venture Capital Funds）
+- 私募基金 
 - KPCB：Kleiner Perkins Caufield Byers 
 - 卖火柴的小女孩
 - A. Philip Randolph
@@ -302,11 +305,9 @@
 - 反摩尔定律
 - 写给大忙人看的Java SE 8
 - 蠢蛋进化论：Mike Judge
-- 怎样尊重一个程序员：王垠
 - 恩赐论
 - 约会～恋爱究竟是什么呢～
-- 机器学习最热门语言分析：v2ex
-- 吴军（Google）：数学之美，文明之光，智能时代，浪潮之巅，硅谷之谜，大学之路
+- 吴军：数学之美，文明之光，智能时代，浪潮之巅，硅谷之谜，大学之路
 - jpeg：Baseline/Progressive
 - C语言接口与实现
 - Skynet
@@ -319,38 +320,37 @@
 - Salome Karwah
 - reStructuredText
 - webrct
-- 破窗效应：架构效应
-- 毛泽东：理想主义者 实用主义者
+- 破窗效应
+- 毛泽东
 - Wappalyzer：Webapp analyzer 
 - IOCCC
-- STEM：科学 技术 工程 数学
+- STEM：科学，技术，工程，数学
 - 暗时间：刘未鹏
-- 吴军：数学之美
 - Sedgewick：红黑树作者 
 - TAOCP：资料库
 - Dan Friedman：Great Teacher Friedman 
-  -：The Little Schemer
+- The Little Schemer
 - cgnail：cgnail.github.io 
-- 精神病院里的正常人：假装精神病 
+- 精神病院里的正常人
 - mactex：tex on mac
 - pandoc：haskell 
 - Apache Commons：工具包
 - The Fifth Estate：第五权利
-- 负暄琐话：袁泳 g9yuayon
+- 负暄琐话：袁泳，g9yuayon
 - 考据癖：localhost-8080.com
 - Shunsuke Sogame：Boost.Egg
-- hongjiang：hongjiang.info Java、Scala
-- 灼眼的夏娜：张逸杰
+- hongjiang：hongjiang.info，Java，Scala
+- 灼眼的夏娜
 - 人类衰退之后
 - 逃跑可耻却有用：新垣结衣
-- Aaron Swartz：RSS和Markdown的联合创始人
-- Curriculum Vitae：与Resume有所差异
+- Aaron Swartz：RSS，Markdown
+- Curriculum Vitae (CV)：Resume
 - Windows编程革命简史：微软是怎样坑程序员的
-- 黄金宝贝：老派肉番
+- 黄金宝贝
 - Unix高级环境编程：Unix接口参考 
-- Edsger Wybe Dijkstra：数学家 程序员 
-- Motan：微博RPC 
-- Linq：C#的一个特性 
+- Edsger Wybe Dijkstra：程序员 
+- Motan：微博
+- Linq：C#
 - Wildfly：原JBOSS 
 - Java Applet：Servlet的对应物体
 - Wildfly Swarm
@@ -360,9 +360,9 @@
 - SSE：Server-sent events
 - Dropwizard
 - Payara Micro
-- Grizzly：Servlet容器
+- Grizzly
 - Undertow
-- Vert.x：Java版的Node.js 
+- Vert.x
 - Spark Framework
 - Play Framework
 - Supervisord：Python守护进程
@@ -378,73 +378,71 @@
 - Apache Hbase：分布式数据库 
 - LWJGL：lightwight Java game library
 - gitlab
-- 花丸幼稚园：柊
-- 小羊肖恩：粘土动画
-- 王冠：Netflix 英国君主立宪 
-- 齐木楠雄的灾难：超能力
+- 花丸幼稚园
+- 小羊肖恩
+- 王冠：Netflix
+- 齐木楠雄的灾难
 - AB测试：南京GDG2016
-- pm2：Node.js守护进程
-- webbp：图片格式 Google
+- pm2：Node.js
+- webbp：Google
 - Ionic：手机应用框架 
 - 编译器设计：Keith D. Cooper 
-- Unix编程艺术：Eric S. Raymond Unix哲学 
-- HTTP权威指南：松鼠书 2012-9出版
+- Unix编程艺术：Eric S. Raymond
+- HTTP权威指南
 - Java编程思想：作者C++背景 
-- Rick and Morty：科幻 第一、二季 
+- Rick and Morty：瑞克与莫蒂
 - 周有光：汉语拼音之父 
 - 我的青春恋爱物语果然有问题：大老师 白学 
 - 仁者无敌：孟子梁惠王上 
 - 程序设计语言——实践之路：Michael L. Scott 
-- 哈佛谈判心理学：领导力
-- 夏洛特烦恼：开心麻花 穿越 
+- 哈佛谈判心理学
+- 夏洛特烦恼：开心麻花
 - 简单的逻辑学：D.Q. McInerny 
 - PVRTC：PowerVR系列GPU支持 
 - ATITC：高通Adreno系列GPU支持，来自以前的ATI 
 - DXTC：NVIDIA的Tegra系列，Vivante的GC系列
 - ETC1：通用数据包，ARM的Mali系列GPU支持 
-- .so文件：动态库
-- image optim：图片优化
+- 动态库：.so文件
+- image optim
 - DexCLassLoader
 - Python源码剖析：陈儒
-- 你只是看起来很努力：李尚龙 鸡汤 
-- 行走在爱与恨之间：白岩松 采访记录 
+- 行走在爱与恨之间：白岩松 
 - 值语义、引用语义：C++的模型 
 - 实战Java高并发程序设计
-- 神们自己
+- 神们自己：阿西莫夫
 - 运维
 - 系统管理员
 - PM：Project Manager 
 - BA：Business Analyst 
 - 数据驱动编程
 - Cargo-Cult
-- 我的世界精灵：好用的minecrft启动器 
+- 我的世界精灵
 - undertale：黑暗童话
-- 维特根斯坦传：天才之为责任：Ray Monk 
+- 维特根斯坦传：天才之为责任 
 - 他改变了中国：Robert Lawrance kuhn
 - 精致的利己主义者：钱理群
 - 小确幸
-- 肉食者鄙：肉食者真的鄙吗？ 
+- 肉食者鄙
 - 易富贤：2004年，天涯，大国空巢理论 
 - Hindley-Milner类型系统
 - Amdahl's law：并行计算
 - Gustafson's law：并行计算
-- 想象共同体：人类的经济行为构建在想象共同体之上
-- 资源、资本与配置资源：为资本主义建模 
+- 想象共同体
+- 资源、资本与配置资源：资本主义 
 - 自然语言处理：NLP
-- 一共、二共：马列毛左，中特邓右
+- 一共、二共
 - 宇宙巡警露露子：TRIGGER 
-- 重构与模式：不推荐
-- Typora：Markdown编辑器
+- 重构与模式
+- Typora
 - RDG濒危物种少女：P.A.WORKS
 - 小林家的妹抖龙：京阿尼
-- 小魔女学园：TRIGGER 
+- 小魔女学园：TRIGGER
 - 视频直播技术详解：七牛
 - Spikey：Mathematica Wolfram Research
 - X理论、Y理论
 - 编程语言拟人化
-- 从量子泡沫到可见宇宙：哔哩哔哩
+- 从量子泡沫到可见宇宙
 - 如今的电视该怎么买?：Zealer 
-- 从 Java 应用部署方式看 IT 思潮
-- 无可奉告：应双骏 5sing
-- 基于minecraft实现的计算机工程：季文翰 哔哩哔哩 
+- 无可奉告：应双骏，5sing
+- 基于minecraft实现的计算机工程：季文翰
 - Web Framework Benchmarks：TechEmpower
