@@ -19,7 +19,7 @@ class PagesLoader {
     }
 
     async loadCatalog() {
-        await this.loadHtml(`/blogs/目录.md`)
+        await this.loadHtml([`/blogs/目录.md`])
         const ul = $('ul')
         for (const li of ul.children) {
             const name = li.innerText
@@ -28,11 +28,15 @@ class PagesLoader {
     }
 
     async loadArticle(name) {
-        await this.loadHtml(`/notes/${name}.md`)
+        await this.loadHtml([`/blogs/${name}.md`, `/notes/${name}.md`])
     }
 
-    async loadHtml(path) {
-        const response = await fetch(path)
+    async loadHtml(paths) {
+        let response
+        for (const path of paths) {
+            response = await fetch(path)
+            if (response.status !== 404) { break }
+        }
         const text = await response.text()
         this.container.innerHTML = marked(text)
     }
