@@ -2,6 +2,7 @@
  * github pages of Cbdy
  * http://jianzhao.org
  */
+
 const $ = document.querySelector.bind(document)
 
 class PagesLoader {
