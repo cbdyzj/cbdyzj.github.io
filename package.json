@@ -22,6 +22,8 @@
     "sequelize": "latest"
   },
   "devDependencies": {
+    "@types/koa": "latest",
+    "@types/koa-static": "latest",
     "@types/sequelize": "latest"
   }
 }

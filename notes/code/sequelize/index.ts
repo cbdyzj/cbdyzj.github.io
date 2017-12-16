@@ -19,20 +19,19 @@ export const sequelize = new Sequelize(options)
 models.forEach(model => model.define(sequelize, Sequelize))
 models.forEach(model => model.associate(sequelize.models))
 
-// 工具函数
-export const print = r => console.log(JSON.stringify(r, null, 2))
-// ---------------- 建立表，初始化数据 ----------------
 
+// ---------------- 建立表，初始化数据 ----------------
 const { Test, TestGroup } = sequelize.models
 
 export async function init() {
     // 新建表
-    await TestGroup.sync({ force: true })
     await Test.sync({ force: true })
     // 初始化数据
-    await TestGroup.create({ groupNo: 'no.1', name: 'haha' })
-    await Test.create({ groupNo: 'no.1', name: 'xixi', quantity: 17 })
-    await Test.create({ groupNo: 'no.1', name: 'hehe', quantity: 7 })
+    await Test.create({ name: 'xixi', quantity: 17 })
+    await Test.create({ name: 'hehe', quantity: 7 })
+    // 查询
+    const print = o => console.log(JSON.stringify(o, null, 2))
+    print(await Test.findAll({ attributes: ['id', 'name', 'quantity', 'time'] }))
 }
 
 if (require.main === module) {
