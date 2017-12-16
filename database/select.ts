@@ -1,4 +1,4 @@
-import { sequelize, print, init } from './orm'
+import { sequelize, print, init } from './index'
 
 const { Test, TestGroup } = sequelize.models
 
