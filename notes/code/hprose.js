@@ -10,7 +10,7 @@ server.addAsyncFunction(hello)
 server.start()
 
 // 客户端
-const client = hprose.Client.create('http://127.0.0.1:7890');
+const client = hprose.Client.create('http://localhost:7890');
 const proxy = client.useService();
 
 setInterval(() => {

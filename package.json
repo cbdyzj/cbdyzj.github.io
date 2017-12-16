@@ -16,6 +16,8 @@
   },
   "homepage": "https://github.com/cbdyzj/cbdyzj.github.io#readme",
   "dependencies": {
+    "hprose": "latest",
+    "joi": "latest",
     "koa": "latest",
     "koa-static": "latest",
     "mysql2": "latest",

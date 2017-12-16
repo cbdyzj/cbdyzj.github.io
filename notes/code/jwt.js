@@ -1,4 +1,4 @@
-import * as jwt from 'jsonwebtoken'
+const jwt = require('jsonwebtoken')
 
 // 生成token
 const token = jwt.sign({ payload: 'payload' }, 'shhhhh')
