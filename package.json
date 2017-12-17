@@ -1,14 +1,17 @@
 {
   "name": "cbdyzj.github.io",
   "version": "1.0.0",
-  "description": "",
+  "description": "Cbdy's GitHub Pages",
   "main": "index.js",
   "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cbdyzj/cbdyzj.github.io.git"
   },
-  "keywords": [],
+  "keywords": [
+    "blog",
+    "notes"
+  ],
   "author": "cbdyzj",
   "license": "ISC",
   "bugs": {
