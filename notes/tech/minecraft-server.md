@@ -1,4 +1,4 @@
-## Minecraft Server
+# Minecraft Server
 
 - bukkit：水桶服，老牌服务器，api来自Mojang
 - MCPCPlus：老牌mod兼容服务器，api来自spigot
