@@ -18,7 +18,7 @@ export function define(sequelize, DataTypes) {
         time: {
             type: DataTypes.DATE,
             allowNull: false,
-            defaultValue: sequelize.fn('current_timestamp'),
+            defaultValue: DataTypes.NOW,
         }
     }, {
             underscored: true,
