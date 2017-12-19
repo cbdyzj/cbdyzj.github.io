@@ -12,8 +12,8 @@ async function consumer() {
         ch.consume(q, msg => {
             console.log('from q: ', msg.content.toString())
         }, { noAck: true })
-    } catch (err) {
-        console.log(err)
+    } catch (error) {
+        console.log(error)
     }
 }
 
@@ -31,8 +31,8 @@ async function producer() {
             await sleep(1000)
         }
 
-    } catch (err) {
-        console.log(err)
+    } catch (error) {
+        console.log(error)
     }
 }
 

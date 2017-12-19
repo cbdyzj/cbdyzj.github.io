@@ -2,7 +2,7 @@ const isNumber = (expr: string) => !Number.isNaN(parseFloat(expr))
 const tokens = ['+', '-', '*', '/', '(', ')']
 
 const stackTopIn = (stack: any[], tokens: any[]) => {
-    for (let token of tokens) {
+    for (const token of tokens) {
         if (stack[stack.length - 1] === token) { return true }
     }
     return false
@@ -10,7 +10,7 @@ const stackTopIn = (stack: any[], tokens: any[]) => {
 
 function splitExpreion(expreion: string): string[] {
     let expr: string = expreion
-    for (let token of tokens) {
+    for (const token of tokens) {
         expr = expr.split(token).join(`|${token}|`)
     }
     return expr.split('|').map(t => t.trim()).filter(t => t !== '')
@@ -19,7 +19,7 @@ function splitExpreion(expreion: string): string[] {
 function suffixArray(exprArray: string[]) {
     const outStack: string[] = []
     const symbolStack: string[] = []
-    for (let expr of exprArray) {
+    for (const expr of exprArray) {
         if (isNumber(expr)) {
             outStack.push(expr)
             continue
