@@ -28,5 +28,5 @@ cover-image: ./cover.jpg
 - 使用pacdoc命令生成epub电子书
 
 ```sh
-$ pandoc 分身.txt -分身 a.epub --toc
+$ pandoc 分身.txt -o 分身.epub --toc
 ```
