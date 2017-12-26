@@ -14,8 +14,17 @@ cover-image: ./cover.jpg
 ---
 ```
 
-- 然后使用markdown的标题来自动生成目录，
-  - 使用`--toc-depth=NUMBER`控制目录生成的深度 
+- 然后使用markdown的标题来自动生成目录（如下）
+  - 使用`--toc-depth=NUMBER`控制目录生成的深度
+
+```
+...
+# 第1章 鞠子之章 一
+...
+# 第2章 双叶之章 一
+...
+```
+
 - 使用pacdoc命令生成epub电子书
 
 ```sh
