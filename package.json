@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/cbdyzj/cbdyzj.github.io#readme",
   "dependencies": {
+    "exceljs": "latest",
     "hprose": "latest",
     "joi": "latest",
     "koa": "latest",

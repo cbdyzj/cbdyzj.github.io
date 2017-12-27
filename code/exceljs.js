@@ -1,7 +1,7 @@
-const Excel = require('exceljs')
+const { Workbook } = require('exceljs')
 const express = require('express')
 
-const workbook = new Excel.Workbook()
+const workbook = new Workbook()
 const worksheet = workbook.addWorksheet('sheet')
 
 worksheet.columns = [
