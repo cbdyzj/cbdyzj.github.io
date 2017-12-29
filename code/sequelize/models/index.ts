@@ -1,3 +1,7 @@
-import * as Test from './Test'
+import * as Foo from './Foo'
+import * as Bar from './Bar'
 
-export default [Test]
+export default [
+    Foo,
+    Bar,
+]
