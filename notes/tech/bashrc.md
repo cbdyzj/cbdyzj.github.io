@@ -28,7 +28,7 @@ alias node0='nvm_init && nvm use --delete-prefix 0.12'
 ```
 [user]
 	name = cbdyzj
-	email = cbdyzj@gmail.com
+	email = cbdyzj@jianzhao.org
 [alias]
 	ss = status -s
 	co = checkout
