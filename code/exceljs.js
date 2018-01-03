@@ -13,6 +13,8 @@ worksheet.columns = [
 
 worksheet.addRow({ id: 1, name: 'aa', age: 17 })
 
+workbook.xlsx.writeFile('excel.xlsx')
+
 app.get('/excel', async (req, res) => {
     res.setHeader('Content-Type', 'application/vnd.openxmlformats')
     res.setHeader("Content-Disposition", "attachment;filename=" + encodeURI('workbook.xlsx'))
