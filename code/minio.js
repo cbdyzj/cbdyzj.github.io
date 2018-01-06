@@ -20,7 +20,9 @@ async function main() {
     }
     // 显示Buckets
     const list = await client.listBuckets()
+    // 储存对象
     await client.putObject('foo', 'foo.txt', new Date().toString())
+    // 获取对象
     const dataStream = await client.getObject('foo', 'foo.txt')
     dataStream.on('data', chunk => console.log(chunk.toString()))
 }
