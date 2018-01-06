@@ -1,5 +1,4 @@
 const { Client } = require('minio')
-const { promisify } = require('util')
 
 const client = new Client({
     endPoint: 'localhost',
