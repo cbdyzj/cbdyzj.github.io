@@ -92,11 +92,11 @@ const foo = [
 - 使用快捷方式
 
 ```javascript
+// bad
+if (Boolean(foo) === true) { }
+
 // good
 if (foo) { }
-
-// bad
-if (foo === 0) { }
 
 // good
 const bar = foo || ''

@@ -9,7 +9,7 @@ services:
       - '9000:9000'
     environment:
       MINIO_ACCESS_KEY: access_key
-      MINIO_SECRET_KEY: secrect_key
+      MINIO_SECRET_KEY: secret_key
     command: server /data
 volumes:
   minio-data:
