@@ -48,3 +48,4 @@
 - xxd
 - strings
 - readelf/greadelf
+- pwgen
