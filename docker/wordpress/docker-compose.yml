@@ -1,14 +1,12 @@
 version: '3'
 services:
-  redis:
+  wordpress:
     image: wordpress
     container_name: wordpress
     ports:
-      # - '6379:6379'
-    volumes:
-      - wordpress-data:/data
-volumes:
-  wordpress-data:
+      - '8080:80'
+    environment:
+      WORDPRESS_DB_PASSWORD: password
 networks:
   default:
     external:
