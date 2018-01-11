@@ -33,6 +33,8 @@ SET 列二 = 4
 WHERE 列一 = 2；
 
 SELECT * FROM 一个表;
+
+TRUNCATE TABLE 一个表; 
 ```
 
 - 数据类型
