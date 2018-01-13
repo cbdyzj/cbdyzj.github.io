@@ -1,5 +1,5 @@
 #!/usr/bin/env python
 
-t = ([],[])
+t = ([], [])
 t[0] += [1]
 print(t)

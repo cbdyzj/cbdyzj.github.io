@@ -26,7 +26,7 @@ async function producer() {
         ch.assertQueue(q, { durable: false });
 
         while (true) {
-            ch.sendToQueue(q, new Buffer('hello!'))
+            ch.sendToQueue(q, Buffer.from('hello!'))
             console.log('send to q')
             await sleep(1000)
         }
