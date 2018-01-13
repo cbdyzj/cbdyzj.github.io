@@ -49,3 +49,4 @@
 - strings
 - readelf/greadelf
 - pwgen
+- sshpass
