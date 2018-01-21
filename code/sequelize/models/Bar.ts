@@ -25,7 +25,7 @@ export function define(sequelize, DataTypes) {
             field: 'updated_at',
         },
     }, {
-            tableName: 'bars',
+            tableName: 'bar',
         })
 }
 
