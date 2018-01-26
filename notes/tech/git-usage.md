@@ -3,7 +3,7 @@
 ```
 $ git merge --squash # 合并代码
 $ git rebase --interactive # 交互变基
-$ git push origin --delete <branch> # 提交代码
+$ git push origin --delete <branch> # 删除远程分支
 $ git branch --set-upstream-to=<uri> # 设置远程分支
 $ git add remote <name> <uri> # 设置源
 $ git rm --cached <file> # 删除暂存
