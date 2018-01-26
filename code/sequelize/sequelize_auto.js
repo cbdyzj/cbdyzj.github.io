@@ -14,4 +14,5 @@ const option = {
 }
 
 const auto = new SequelizeAuto(option.database, option.username, option.password, option)
-auto.run(console.log.bind(console))
+
+auto.run(error => console.error(error))
