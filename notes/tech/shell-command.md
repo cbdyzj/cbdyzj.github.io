@@ -41,6 +41,7 @@
 - top
 - iostat
 - netstat
+- netstat -anp tcp
 - lsof
 - nc
 - wc
@@ -50,3 +51,4 @@
 - readelf/greadelf
 - pwgen
 - sshpass
+- tmux
