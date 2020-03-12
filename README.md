@@ -6,6 +6,7 @@
 - [GitHub](https://github.com/cbdyzj)
 - [V2EX](https://www.v2ex.com/member/Cbdy)
 - [微博](https://weibo.com/cbdyzj)
+- [EvenJavaScript](https://t.me/evenjavascript)
 - [nano](https://nano.jianzhao.org/)
 - [搞笑小动物](https://weibo.com/u/7318316735)
 
