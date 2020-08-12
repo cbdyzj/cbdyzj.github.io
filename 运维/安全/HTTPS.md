@@ -1,3 +1,5 @@
-- HTTPS双向认证
-- SNI
 - HSTS
+- HTTP/3
+- SNI
+- ESNI
+- DNSsec/DoT/DoH
