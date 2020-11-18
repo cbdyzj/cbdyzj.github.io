@@ -221,7 +221,7 @@ public abstract @NotNull Map<@NotNull Long, @Nullable String> getUserNameMap(@No
 - 返回值为二维数组，二维数组自身不能为`null`，二维数组内的元素可以为`null`。
 
 ```java
-public abstract Integer[][] getMatrixByArgs(String... args);
+public abstract List<List<Integer>> getMatrixByArgs(String... args);
 ```
 
 ---
