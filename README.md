@@ -1,6 +1,6 @@
 ### Hello. 
 
-My name is Jian Zhao.
+This is Jian.
 
 You can find me here:
 
